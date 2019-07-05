@@ -1,0 +1,1 @@
+{"data":{"componentMetadata":{"displayName":"Tabs","props":[{"defaultValue":null,"name":"labels","type":{"name":"arrayOf","raw":null,"value":{"name":"node"}},"required":true,"docblock":"","doclets":[]},{"defaultValue":null,"name":"children","type":{"name":"arrayOf","raw":null,"value":{"name":"element"}},"required":true,"docblock":"","doclets":[]}]}}}
