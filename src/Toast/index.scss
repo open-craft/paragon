@@ -1,6 +1,6 @@
 @import "bootstrap-toast";
 
-:root {
+:root, :host {
   --pgn-elevation-toast-box-shadow:
     var(--pgn-elevation-toast-box-shadow-1-offset-x)
     var(--pgn-elevation-toast-box-shadow-1-offset-y)

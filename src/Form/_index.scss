@@ -6,7 +6,7 @@
 @import "FormText";
 @import "FormControlSet";
 
-:root {
+:root, :host {
   --pgn-elevation-form-control-indicator-checked-focus:
     var(--pgn-elevation-form-control-indicator-checked-focus-offset-x)
     var(--pgn-elevation-form-control-indicator-checked-focus-offset-y)

@@ -1,6 +1,6 @@
 {
   "name": "@openedx/paragon",
-  "version": "20.18.1",
+  "version": "23.22.0",
   "description": "Accessible, responsive UI component library based on Bootstrap.",
   "main": "dist/index.js",
   "module": "dist/index.js",

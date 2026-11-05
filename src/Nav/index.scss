@@ -1,6 +1,6 @@
 @import "mixins";
 
-:root {
+:root, :host {
   --pgn-border-color-nav-tabs-link-border-hover:
     var(--pgn-border-color-nav-tabs-link-border-hover-top)
     var(--pgn-border-color-nav-tabs-link-border-hover-right)

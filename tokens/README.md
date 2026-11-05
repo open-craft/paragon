@@ -182,12 +182,14 @@ A theme author can target that variable by placing the following at `<their-sour
 The build emits:
 
 ```css
-:root {
+:root, :host {
   --catalog-home-page-banner-background-color: var(--pgn-color-primary-400);
 }
 ```
 
 …replacing the MFE's gray fallback with the theme's primary color.
+
+Custom properties are declared on `:root, :host` so they also apply to content rendered inside a shadow root, where `:root` matches nothing.
 
 ### Path conventions
 
@@ -201,4 +203,4 @@ App tokens are not theme-variant-aware in this version — there's a single `app
 
 ### Output and consumption
 
-App `variables.css` files are inlined into each theme variant's bundle by `paragon build-scss` via `@import` statements added to the theme's `index.css`. So when a theme author publishes `dist/light.min.css`, it already contains the app overrides. No separate per-app CSS files are emitted in `dist/`, and no MFE-side configuration change is needed — every MFE that loads the brand's `light.min.css` automatically picks up every app's custom-property declarations on `:root`.
+App `variables.css` files are inlined into each theme variant's bundle by `paragon build-scss` via `@import` statements added to the theme's `index.css`. So when a theme author publishes `dist/light.min.css`, it already contains the app overrides. No separate per-app CSS files are emitted in `dist/`, and no MFE-side configuration change is needed — every MFE that loads the brand's `light.min.css` automatically picks up every app's custom-property declarations on `:root, :host`.

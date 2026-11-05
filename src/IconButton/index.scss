@@ -1,6 +1,6 @@
 @import "mixins";
 
-:root {
+:root, :host {
   --pgn-elevation-icon-button-box-shadow-primary-base:
     var(--pgn-elevation-icon-button-box-shadow-primary-base-inset)
     var(--pgn-elevation-icon-button-box-shadow-primary-base-offset-x)
