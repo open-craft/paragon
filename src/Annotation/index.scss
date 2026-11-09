@@ -1,6 +1,6 @@
 @import "mixins";
 
-:root {
+:root, :host {
   --pgn-elevation-annotation-box-shadow:
     drop-shadow(
       var(--pgn-elevation-annotation-box-shadow-1-offset-x)
